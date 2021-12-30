@@ -1,0 +1,25 @@
+{
+  "name": "mygento/symfony-standard",
+  "description": "A set of rules and sniffs",
+  "homepage": "https://github.com/mygento/symfony-standard",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mygento",
+      "homepage": "https://www.mygento.com",
+      "email": "connect@mygento.com"
+    }
+  ],
+  "require": {
+    "squizlabs/php_codesniffer": "3.*",
+    "friendsofphp/php-cs-fixer": "3.*",
+    "php-parallel-lint/php-parallel-lint": "^1.0.0",
+    "phpro/grumphp": "~1.7.0",
+    "phpstan/phpstan": "~1.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mygento\\Symfony\\Config\\": "config"
+    }
+  }
+}
