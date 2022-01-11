@@ -30,7 +30,7 @@ class Base extends Config
     /**
      * {@inheritdoc}
      */
-    public function setFinder(iterable $finder): ConfigInterface
+    public function setFinder($finder)
     {
         $finder->exclude('dev/tests/functional/generated')
             ->exclude('dev/tests/functional/var')
@@ -58,10 +58,11 @@ class Base extends Config
             'include' => true,
             'new_with_braces' => true,
             'no_empty_statement' => true,
+            'no_extra_consecutive_blank_lines' => true,
             'no_leading_import_slash' => true,
             'no_leading_namespace_whitespace' => true,
             'no_multiline_whitespace_around_double_arrow' => true,
-            'multiline_whitespace_before_semicolons' => true,
+            'no_multiline_whitespace_before_semicolons' => true,
             'no_singleline_whitespace_before_semicolons' => true,
             'no_trailing_comma_in_singleline_array' => true,
             'no_unused_imports' => true,
@@ -89,7 +90,7 @@ class Base extends Config
             'blank_line_after_opening_tag' => true,
             'blank_line_before_statement' => ['statements' => ["return", "throw", "try"]],
             'cast_spaces' => true,
-            'class_attributes_separation' => ['elements' => ['const' => 'none','method' => 'one','property' => 'none','trait_import' => 'none']],
+            'class_attributes_separation' => ['elements' => ['method', 'property']],
             'explicit_indirect_variable' => true,
             'explicit_string_variable' => true,
             'function_typehint_space' => true,
@@ -126,7 +127,7 @@ class Base extends Config
             //'phpdoc_var_without_name' => false,
             'return_assignment' => true,
             //'single_line_comment_style' => false,
-            'trailing_comma_in_multiline' => true,
+            'trailing_comma_in_multiline_array' => true,
             'trim_array_spaces' => true,
             'unary_operator_spaces' => true,
             'whitespace_after_comma_in_array' => true,
