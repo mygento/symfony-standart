@@ -63,7 +63,7 @@ class Base extends Config
             'no_multiline_whitespace_around_double_arrow' => true,
             'multiline_whitespace_before_semicolons' => true,
             'no_singleline_whitespace_before_semicolons' => true,
-            'no_trailing_comma_in_singleline_array' => true,
+            'no_trailing_comma_in_singleline' => true,
             'no_unused_imports' => true,
             'no_whitespace_in_blank_line' => true,
             'object_operator_without_whitespace' => true,
@@ -104,7 +104,6 @@ class Base extends Config
             'no_short_bool_cast' => true,
             'no_spaces_around_offset' => true,
             'no_superfluous_elseif' => true,
-            'no_trailing_comma_in_list_call' => true,
             'no_useless_else' => true,
             'ordered_class_elements' => [
                 'order' => ["use_trait", "constant_public", "constant_protected", "constant_private", "property_public", "property_protected", "property_private", "construct", "destruct", "magic", "phpunit", "method_public", "method_protected", "method_private"]
